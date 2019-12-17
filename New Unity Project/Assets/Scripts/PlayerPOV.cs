@@ -25,7 +25,7 @@ public class PlayerPOV : MonoBehaviour
 
         thisTransform.position = currentPosition;
 
-        Quaternion wantedRotation = Quaternion.LookRotation(targetPlayer.position - thisTransform.position);
+        Quaternion wantedRotation = Quaternion.LookRotation(targetPlayer.position - thisTransform.position, targetPlayer.up);
         thisTransform.rotation = wantedRotation;
      }
 }

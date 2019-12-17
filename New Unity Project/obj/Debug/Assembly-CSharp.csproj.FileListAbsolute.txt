@@ -23,13 +23,11 @@ D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Diagnostics.StackTrace.dl
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Diagnostics.Tools.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Diagnostics.TraceSource.dll
-D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Diagnostics.Tracing.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Drawing.Primitives.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Dynamic.Runtime.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Globalization.Calendars.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Globalization.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Globalization.Extensions.dll
-D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.IO.Compression.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.IO.Compression.ZipFile.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.IO.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.IO.FileSystem.dll
@@ -44,7 +42,6 @@ D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Linq.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Linq.Expressions.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Linq.Parallel.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Linq.Queryable.dll
-D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.Http.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.NameResolution.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.NetworkInformation.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.Ping.dll
@@ -55,7 +52,6 @@ D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.Sockets.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.WebHeaderCollection.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.WebSockets.Client.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Net.WebSockets.dll
-D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Numerics.Vectors.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.ObjectModel.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Reflection.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Reflection.Extensions.dll
@@ -92,9 +88,7 @@ D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Threading.Tasks.Parallel.
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Threading.Thread.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Threading.ThreadPool.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Threading.Timer.dll
-D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Transactions.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.ValueTuple.dll
-D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Web.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Xml.ReaderWriter.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Xml.XDocument.dll
 D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.Xml.XmlDocument.dll
@@ -240,3 +234,12 @@ D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\UnityEngine.XRModule.xml
 D:\Jet-Fighter\New Unity Project\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 D:\Jet-Fighter\New Unity Project\obj\Debug\Assembly-CSharp.dll
 D:\Jet-Fighter\New Unity Project\obj\Debug\Assembly-CSharp.pdb
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\Boo.Lang.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\System.ServiceModel.Http.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\UnityScript.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\UnityScript.Lang.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\Boo.Lang.Compiler.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\Boo.Lang.PatternMatching.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\Boo.Lang.Parser.dll
+D:\Jet-Fighter\New Unity Project\Temp\bin\Debug\Boo.Lang.Useful.dll

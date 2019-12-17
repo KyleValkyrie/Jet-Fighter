@@ -4,32 +4,72 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    float speed = 0.25f;
-    float velocity = 0.25f;
-    float smooth = 5.0f;
-    float tiltAngle = 60.0f;
 
+    public ParticleSystem LeftThruster;
+    public ParticleSystem RightThruster;
+    public ParticleSystem MiddleThruster;
+    public float speed = 20f;
+    private float speedUpperLimit = 100f;
+    private float speedLowerLimit = 10f;
+    public float velocity = 10f;
+    float roll;
+    float pitch;
+
+    void thrusterAnimationOn()
+    {
+        LeftThruster.startLifetime = 1f;
+        LeftThruster.startSize = 1.5f;
+        RightThruster.startLifetime=1f;
+        RightThruster.startSize = 1.5f;
+        MiddleThruster.startLifetime=2f;
+        MiddleThruster.startSize = 1.5f;
+    }
+    void thrusterAnimationOff()
+    {
+        LeftThruster.startLifetime = 0.5f;
+        LeftThruster.startSize = 0.5f;
+        RightThruster.startLifetime=0.5f;
+        RightThruster.startSize = 0.5f;
+        MiddleThruster.startLifetime=1f;
+        MiddleThruster.startSize = 0.5f;
+    }
+    
+    void movement()
+    //Make the plane keep flying endlessly forward
+    {
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            while (speed < speedUpperLimit)
+            {
+                speed = speed + velocity;
+                thrusterAnimationOn();
+            }
+        }
+         if (Input.GetKeyUp(KeyCode.Space))
+         {
+            while (speed > speedLowerLimit)
+            {
+                speed = speed/ 20f ;
+                thrusterAnimationOff();
+            }
+             
+         }
+      
+    }
     void Update()
     {
-        //Plane movements
-        float moveHorizontally = Input.GetAxis("Horizontal");
-        float moveVertically = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(moveHorizontally*velocity, moveVertically* -1*velocity, speed);
-        transform.position += movement;
+       
+        movement();
         
+        
+        //Plane rotation
+        roll = Input.GetAxisRaw("Horizontal");
+        pitch = Input.GetAxisRaw("Vertical");
 
-        // Smoothly tilts the plane towards a target rotation.
-        float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
-        float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
-
-        // Rotate the plane by converting the angles into a quaternion.
-        Quaternion target = Quaternion.Euler(tiltAroundX, 0, -tiltAroundZ);
-
-        // Dampen towards the target rotation
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+        transform.Rotate(Vector3.back * roll * 100f * Time.deltaTime, Space.Self);
+        transform.Rotate(Vector3.right * pitch * 100f * Time.deltaTime, Space.Self);
 
        
-
-        
-    }
+     }
 }
