@@ -2,29 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyWeapon : MonoBehaviour
 {
-    public float speed = 200f;
-    public float damage = 20f;
     private Transform thisTransform;
-    public Transform hitFeedback;
-
+    public float damage = 100f;
+    public GameObject bullet;
+    // Start is called before the first frame update
     void Start()
     {
-       thisTransform = transform;
+        thisTransform = transform;
     }
+
     // Update is called once per frame
     void Update()
     {
-        thisTransform.position += Time.deltaTime * speed * thisTransform.forward;
+
     }
-    void OnCollisionEnter (Collision collision)
+        void OnCollisionEnter (Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.SendMessage("takeDamage", damage, SendMessageOptions.DontRequireReceiver);
             Destroy(gameObject);
         }
     }
-     
 }
+

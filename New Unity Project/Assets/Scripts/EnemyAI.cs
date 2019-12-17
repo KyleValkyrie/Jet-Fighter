@@ -33,7 +33,7 @@ public class EnemyAI : MonoBehaviour
         }
         else if (Vector3.Distance(transform.position, player.position) > maintainDistance)
         {
-            Vector3 targetDirection = player.position - transform.position;
+            Vector3 targetDirection = player.position + transform.position;
             Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, -speed * Time.deltaTime, 0.0f);
             transform.position = Vector3.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
             transform.rotation = Quaternion.LookRotation(newDirection);

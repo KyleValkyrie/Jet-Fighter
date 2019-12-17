@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth = 100f;
-    public float currentHealth;
+    public float maxPlayerHealth = 100f;
+    public float currentPlayerHealth;
     public ParticleSystem explosionFX;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentPlayerHealth = maxPlayerHealth;
     }
     public void takeDamage(float damage)
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        currentPlayerHealth -= damage;
+        if (currentPlayerHealth <= 0)
         {
             explosionFX.Play();
             Die();
@@ -25,9 +25,12 @@ public class Health : MonoBehaviour
     void Die()
     {
         
-        Destroy(gameObject);
+        Destroy(this);
+        
+
     }
     
+
     // Update is called once per frame
     void Update()
     {
